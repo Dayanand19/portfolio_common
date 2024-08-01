@@ -1,45 +1,64 @@
-export function AsideSection() {
-  // const searchParams = new URLSearchParams(window.location.href.search);
+import React from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
-  // console.log("searchParms---->", searchParams.has("home"));
+export function AsideSection() {
+  const location = useLocation();
 
   return (
     <div className="aside">
       <div className="logo">
-        <a href="home">
+        <Link to="home">
           <span>D</span>anny
-        </a>
+        </Link>
       </div>
       <div className="nav-toggler">
         <span></span>
       </div>
       <ul className="nav">
         <li>
-          <a href="home" className="active">
+          <Link
+            to="home"
+            className={location.pathname === "/home" ? "active" : null}
+          >
             <i className="fa fa-home"></i> Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="about">
+          <Link
+            to="about"
+            className={location.pathname === "/about" ? "active" : null}
+          >
             <i className="fa fa-user"></i> About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="services">
+          <Link
+            to="services"
+            className={location.pathname === "/service" ? "active" : null}
+          >
             <i className="fa fa-list"></i> Services
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="portfolio">
+          <Link
+            to="portfolio"
+            className={location.pathname === "/portfolio" ? "active" : null}
+          >
             <i className="fa fa-briefcase"></i> Portfolio
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="contact">
+          <Link
+            to="contact"
+            className={location.pathname === "/contact" ? "active" : null}
+          >
             <i className="fa fa-comments"></i> Contact
-          </a>
+          </Link>
         </li>
       </ul>
+      <Outlet />
     </div>
   );
 }
+
+export default AsideSection;

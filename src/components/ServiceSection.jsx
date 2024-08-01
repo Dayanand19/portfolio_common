@@ -1,5 +1,6 @@
-export function ServiceSection(){
-    return(<section className="service section" id="services">
+export function ServiceSection() {
+  return (
+    <section className="service section" id="services">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
@@ -94,5 +95,5 @@ export function ServiceSection(){
         </div>
       </div>
     </section>
-    )
+  );
 }

@@ -1,6 +1,6 @@
-export function AboutSection(){
-    return(
-      <section className="about section" id="about">
+export function AboutSection() {
+  return (
+    <section className="about section" id="about">
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
@@ -15,14 +15,13 @@ export function AboutSection(){
                   I'm Dayanand Kallem, <span>Web Developer</span>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Modi harum, quasi voluptate laudantium amet fuga
-                  blanditiis iure soluta aliquid suscipit asperiores
-                  maiores voluptatem mollitia eligendi officiis
-                  perferendis ex? Iure perspiciatis animi magnam culpa
-                  nisi debitis vero est enim? Doloribus, quod, eum
-                  excepturi expedita ad illo in culpa odit cum laudantium
-                  sed impedit distinctio amet facere.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                  harum, quasi voluptate laudantium amet fuga blanditiis iure
+                  soluta aliquid suscipit asperiores maiores voluptatem mollitia
+                  eligendi officiis perferendis ex? Iure perspiciatis animi
+                  magnam culpa nisi debitis vero est enim? Doloribus, quod, eum
+                  excepturi expedita ad illo in culpa odit cum laudantium sed
+                  impedit distinctio amet facere.
                 </p>
               </div>
             </div>
@@ -147,11 +146,10 @@ export function AboutSection(){
                         </h3>
                         <h4 className="timeline-title">Masters in IE</h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Mollitia accusamus aspernatur
-                          laborum recusandae rerum nemo asperiores eaque
-                          ipsa aliquam illo! Architecto culpa eos iure
-                          deserunt.
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia accusamus aspernatur laborum recusandae
+                          rerum nemo asperiores eaque ipsa aliquam illo!
+                          Architecto culpa eos iure deserunt.
                         </p>
                       </div>
                       {/* <!-- ===== timeline item ==== --> */}
@@ -162,11 +160,10 @@ export function AboutSection(){
                         </h3>
                         <h4 className="timeline-title">Masters in IE</h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Mollitia accusamus aspernatur
-                          laborum recusandae rerum nemo asperiores eaque
-                          ipsa aliquam illo! Architecto culpa eos iure
-                          deserunt.
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia accusamus aspernatur laborum recusandae
+                          rerum nemo asperiores eaque ipsa aliquam illo!
+                          Architecto culpa eos iure deserunt.
                         </p>
                       </div>
                       {/* <!-- ===== timeline item ==== --> */}
@@ -177,11 +174,10 @@ export function AboutSection(){
                         </h3>
                         <h4 className="timeline-title">Masters in IE</h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Mollitia accusamus aspernatur
-                          laborum recusandae rerum nemo asperiores eaque
-                          ipsa aliquam illo! Architecto culpa eos iure
-                          deserunt.
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia accusamus aspernatur laborum recusandae
+                          rerum nemo asperiores eaque ipsa aliquam illo!
+                          Architecto culpa eos iure deserunt.
                         </p>
                       </div>
                     </div>
@@ -201,11 +197,10 @@ export function AboutSection(){
                         </h3>
                         <h4 className="timeline-title">Masters in IE</h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Mollitia accusamus aspernatur
-                          laborum recusandae rerum nemo asperiores eaque
-                          ipsa aliquam illo! Architecto culpa eos iure
-                          deserunt.
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia accusamus aspernatur laborum recusandae
+                          rerum nemo asperiores eaque ipsa aliquam illo!
+                          Architecto culpa eos iure deserunt.
                         </p>
                       </div>
                       {/* <!-- ===== timeline item ==== --> */}
@@ -216,11 +211,10 @@ export function AboutSection(){
                         </h3>
                         <h4 className="timeline-title">Masters in IE</h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Mollitia accusamus aspernatur
-                          laborum recusandae rerum nemo asperiores eaque
-                          ipsa aliquam illo! Architecto culpa eos iure
-                          deserunt.
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia accusamus aspernatur laborum recusandae
+                          rerum nemo asperiores eaque ipsa aliquam illo!
+                          Architecto culpa eos iure deserunt.
                         </p>
                       </div>
                       {/* <!-- ===== timeline item ==== --> */}
@@ -231,11 +225,10 @@ export function AboutSection(){
                         </h3>
                         <h4 className="timeline-title">Masters in IE</h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Mollitia accusamus aspernatur
-                          laborum recusandae rerum nemo asperiores eaque
-                          ipsa aliquam illo! Architecto culpa eos iure
-                          deserunt.
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Mollitia accusamus aspernatur laborum recusandae
+                          rerum nemo asperiores eaque ipsa aliquam illo!
+                          Architecto culpa eos iure deserunt.
                         </p>
                       </div>
                     </div>
@@ -247,5 +240,5 @@ export function AboutSection(){
         </div>
       </div>
     </section>
-    )
+  );
 }

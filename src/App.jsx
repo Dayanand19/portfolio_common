@@ -15,18 +15,16 @@ function App() {
     <>
       {/* <!-- ==== Main Container Start ==== --> */}
       <div className="main-container">
-        <AsideSection />
-        {/* <!-- ==== Main Content Start ==== --> */}
         <div className="main-content">
           <BrowserRouter>
             <Routes>
-              {/* <Route path="/" element={<AsideSection />}> */}
-              <Route path="home" element={<HomeSection />}></Route>
-              <Route path="about" element={<AboutSection />} />
-              <Route path="services" element={<ServiceSection />} />
-              <Route path="portfolio" element={<PortfolioSection />} />
-              <Route path="contact" element={<ContactSection />} />
-              {/* </Route> */}
+              <Route path="/" element={<AsideSection />}>
+                <Route path="home" element={<HomeSection />} />
+                <Route path="about" element={<AboutSection />} />
+                <Route path="services" element={<ServiceSection />} />
+                <Route path="portfolio" element={<PortfolioSection />} />
+                <Route path="contact" element={<ContactSection />} />
+              </Route>
             </Routes>
           </BrowserRouter>
         </div>
