@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import "./css/style-switcher.css";
 import "./css/style.css";
@@ -11,9 +12,29 @@ import { AsideSection } from "./components/AsideSection";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    const dayNight = document.querySelector(".day-night");
+    if (dayNight) {
+      const handleDayNightClick = () => {
+        // const icon = dayNight.querySelector("i");
+        // if (icon) {
+        //   icon.classList.toggle("fa-moon");
+        //   icon.classList.toggle("fa-sun");
+        // }
+        document.body.classList.toggle("dark");
+      };
+
+      dayNight.addEventListener("click", handleDayNightClick);
+
+      // Cleanup event listener on component unmount
+      return () => {
+        dayNight.removeEventListener("click", handleDayNightClick);
+      };
+    }
+  }, []);
+
   return (
     <>
-      {/* <!-- ==== Main Container Start ==== --> */}
       <div className="main-container">
         <div className="main-content">
           <BrowserRouter>
@@ -28,10 +49,7 @@ function App() {
             </Routes>
           </BrowserRouter>
         </div>
-        {/* <!-- ==== Main Content End ==== --> */}
       </div>
-      {/* <!-- ==== Main Container End ==== --> */}
-      {/* <!-- ==== Style Switcher Start ==== --> */}
       <div className="style-switcher">
         <div className="style-switcher-toggler s-icon">
           <i className="fas fa-cog fa-spin"></i>
@@ -41,11 +59,26 @@ function App() {
         </div>
         <h4>Theme Colors</h4>
         <div className="colors">
-          <span className="color-1" onClick={setActiveStyle("color-1")}></span>
-          <span className="color-2" onClick={setActiveStyle("color-2")}></span>
-          <span className="color-3" onClick={setActiveStyle("color-3")}></span>
-          <span className="color-4" onClick={setActiveStyle("color-4")}></span>
-          <span className="color-5" onClick={setActiveStyle("color-5")}></span>
+          <span
+            className="color-1"
+            onClick={() => setActiveStyle("color-1")}
+          ></span>
+          <span
+            className="color-2"
+            onClick={() => setActiveStyle("color-2")}
+          ></span>
+          <span
+            className="color-3"
+            onClick={() => setActiveStyle("color-3")}
+          ></span>
+          <span
+            className="color-4"
+            onClick={() => setActiveStyle("color-4")}
+          ></span>
+          <span
+            className="color-5"
+            onClick={() => setActiveStyle("color-5")}
+          ></span>
         </div>
       </div>
       {/* <!-- ==== Style Switcher End ==== --> */}

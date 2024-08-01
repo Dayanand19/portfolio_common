@@ -1,5 +1,4 @@
 export function HomeSection() {
-  console.log("check1--->homesection");
   return (
     <section className="home active section" id="home">
       <div className="container">
