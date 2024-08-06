@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import "./css/style-switcher.css";
 import "./css/style.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { setActiveStyle } from "./js/style-switcher";
 import { HomeSection } from "./components/HomeSection";
 import { AboutSection } from "./components/AboutSection";
@@ -15,14 +16,18 @@ function App() {
   useEffect(() => {
     const dayNight = document.querySelector(".day-night");
     if (dayNight) {
+      const icon = dayNight.querySelector("i");
       const handleDayNightClick = () => {
-        // const icon = dayNight.querySelector("i");
-        // if (icon) {
-        //   icon.classList.toggle("fa-moon");
-        //   icon.classList.toggle("fa-sun");
-        // }
+        icon.classList.toggle("fa-sun");
+        icon.classList.toggle("fa-moon");
         document.body.classList.toggle("dark");
       };
+
+      if (icon && document.body.classList.contains("dark")) {
+        icon.classList.add("fa-sun");
+      } else {
+        icon.classList.add("fa-moon");
+      }
 
       dayNight.addEventListener("click", handleDayNightClick);
 
@@ -81,13 +86,6 @@ function App() {
           ></span>
         </div>
       </div>
-      {/* <!-- ==== Style Switcher End ==== --> */}
-      {/* <!-- ==== JS Files ==== --> */}
-      {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
-    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> */}
-      {/* <script src="js/script.js"></script>
-  <script src="js/style-switcher.js"></script> */}
     </>
   );
 }
